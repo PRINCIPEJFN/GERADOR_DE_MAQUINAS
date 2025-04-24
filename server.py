@@ -17,8 +17,8 @@ PATH_CONTRIBUTIONS = "/storage/emulated/0/GERADOR MAQUINA/memory/contributions"
 
 PATH_DICTIONARY = "/storage/emulated/0/GERADOR MAQUINA/dictionary.txt"
 
-HOST = "127.0.0.117"  # Standard loopback interface address (localhost)
-PORT = 65432  # Port to listen on (non-privileged ports are > 1023)
+HOST = "127.0.0.100"  # Standard loopback interface address (localhost)
+PORT = 6659 # Port to listen on (non-privileged ports are > 1023)
 
 
 
@@ -146,7 +146,7 @@ def storage():
 	            	if str(data)[2:len(data)].startswith("INSERT "):
 	            		save_option(data[6:len(data)], HOST)
 	            		conn.sendall(str("ADD UP: " + str(data)[6:len(data)]).encode("utf8"))
-	            	if (str(data))[2:-1].startswith("SD"):
+	            	if (str(data))[2:-1].startswith("SSD"):
 	            		print("SDD MEMORY TOTAL USAGE")
 	            		conn.sendall(str('MEMORY USAGE:  ' + str(C_FILES()) + " FILES").encode("utf8"))
 	            	if (str(data)[2:-1].startswith("BEST ")):

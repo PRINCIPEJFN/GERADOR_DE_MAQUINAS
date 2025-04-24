@@ -9,8 +9,8 @@ LOCAL_MEMORY_PATH_BAD = "/storage/emulated/0/GERADOR MAQUINA/local/memory/bad"
 
 LOCAL_DICTIONARY_PATH = "/storage/emulated/0/GERADOR MAQUINA/local/dictionary.txt"
 
-HOST = "127.0.0.117"  # The server's hostname or IP address
-PORT = 65432  # The port used by the server
+HOST = "127.0.0.100"  # The server's hostname or IP address
+PORT = 6660  # The port used by the server
 
 SAVE_ON_MEMORY = True
 USE_LOCAL_DICTIONARY  = False
